@@ -11,7 +11,7 @@ function Profile ({ username, tag, location, avatar, stats }) {
       className={s.avatar}
     />
     <p className={s.name}>{username}</p>
-    <p className={s.tag}>{tag}</p>
+    <p className={s.tag}>@{tag}</p>
     <p className={s.location}>{location}</p>
   </div>
 

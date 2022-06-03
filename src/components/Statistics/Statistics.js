@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import s from './Statistics.modules.css';
 
-function Statistics({ title, stats }){ 
+function Statistics({ title, stats }) { 
     return (
         <section className={s.statistic}>
             {title && <h2 className={s.title}>{title}</h2>}
