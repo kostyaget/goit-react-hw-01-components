@@ -5,12 +5,12 @@ import FriendListItem from '../FriendListItem/FriendListItem';
 function FriendList({ friends }) {
     return (
         <ul className={s.friendlist}>
-            {friends.map((friend) => (
-                <li key={friend.id}>
+            {friends.map(({id,avatar,name,isOnline}) => (
+                <li key={id}>
                     <FriendListItem
-                        avatar={friend.avatar}
-                        name={friend.name}
-                        isOnline={friend.isOnline} />
+                        avatar={avatar}
+                        name={name}
+                        isOnline={isOnline} />
                 </li>
             ))}
         </ul>
